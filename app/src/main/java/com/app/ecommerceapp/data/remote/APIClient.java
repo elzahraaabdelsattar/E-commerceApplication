@@ -18,6 +18,14 @@ public interface APIClient {
     @FormUrlEncoded
     Call<ResponseDto<User>> login(@Field("email") String email, @Field("password") String password);
 
+    ///login
+
+    @POST("register")
+    @FormUrlEncoded
+    Call<ResponseDto<User>> signUp(@Field("phone") String phone, @Field("email") String email,@Field("username") String username,
+                                   @Field("longitude") String longitude,@Field("latitude") String latitude,
+                                   @Field("password") String password,@Field("re_password") String re_password);
+
 
 
 }
