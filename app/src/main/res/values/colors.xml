@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white_color">#ffffff</color>
+    <color name="moov_color">#a56fff</color>
+    <color name="black_color">#000000</color>
+    <color name="red_color">#FF0000</color>
+    <color name="colorPrimary">#a56fff</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#4D4AFF</color>
+    <color name="colorGray">#d9d9d9</color>
+    <color name="colorBlack">#000000</color>
+</resources>

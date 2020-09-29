@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rectangle_shape2_moov"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_user_posts_orders"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="30dp"
+            android:foregroundGravity="center"
+            app:layout_constraintEnd_toEndOf="@id/constraint_layout"
+            app:layout_constraintStart_toStartOf="@id/constraint_layout"
+            app:layout_constraintTop_toTopOf="@id/constraint_layout">
+
+            <ImageView
+                android:id="@+id/logo_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Logo"
+                android:padding="16dp"
+                android:src="@drawable/verify_image"
+                tools:ignore="HardcodedText" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/user_name_user_posts_orders_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramzy"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraint_layout"
+            app:layout_constraintEnd_toEndOf="@+id/constraint_layout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/constraint_layout"
+            app:layout_constraintTop_toBottomOf="@+id/card_user_posts_orders" />
+
+        <ImageView
+            android:id="@+id/setting_user_posts_orders_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraint_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_setting_white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/profile_setting_button"
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:layout_margin="16dp"
+            android:background="@drawable/back_border"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="@string/profile_setting"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <Button
+            android:id="@+id/bid_request_setting_button"
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:layout_margin="16dp"
+            android:background="@drawable/back_border"
+            android:drawableStart="@drawable/ic_bid_request"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="@string/bid_request"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_setting_button" />
+
+        <Button
+            android:id="@+id/orders_setting_button"
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:layout_margin="16dp"
+            android:background="@drawable/back_border"
+            android:drawableStart="@drawable/ic_orders"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="@string/my_orders"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bid_request_setting_button" />
+
+        <Button
+            android:id="@+id/favorite_setting_button"
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:layout_margin="16dp"
+            android:background="@drawable/back_border"
+            android:drawableStart="@drawable/ic_favorite"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="@string/favorite"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orders_setting_button" />
+
+        <Button
+            android:id="@+id/logout_setting_button"
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:layout_margin="16dp"
+            android:background="@drawable/back_border"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="@string/logout"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favorite_setting_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
