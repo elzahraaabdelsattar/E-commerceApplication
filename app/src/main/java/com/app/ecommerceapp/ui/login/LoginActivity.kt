@@ -3,10 +3,13 @@ package com.app.ecommerceapp.ui.login
 import android.content.Intent
 import android.os.Bundle
 import android.provider.ContactsContract
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LifecycleOwner
 import com.app.ecommerceapp.R
+import com.app.ecommerceapp.core.hide
+import com.app.ecommerceapp.core.show
 import com.app.ecommerceapp.data.model.ResponseDto
 import com.app.ecommerceapp.data.model.User
 import com.app.ecommerceapp.data.remote.APIs
@@ -20,6 +23,7 @@ class LoginActivity : AppCompatActivity(), LifecycleOwner {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
 
         forget_password_login_textView.setOnClickListener {
             val int = Intent(this, ForgetPasswordActivity::class.java)
@@ -42,6 +46,7 @@ class LoginActivity : AppCompatActivity(), LifecycleOwner {
     }
 
     private fun LogIn() {
+        login_progressBar.show()
         val email= email_login_editText.getText().toString().trim()
         val password = password_login_editText.getText().toString().trim()
 

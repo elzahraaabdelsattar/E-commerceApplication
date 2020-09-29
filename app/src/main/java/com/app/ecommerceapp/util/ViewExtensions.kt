@@ -1,4 +1,4 @@
-package com.millensys.mihealthwallet.utils.extensions
+package com.app.ecommerceapp.core
 
 import android.app.Activity
 import android.graphics.Color
