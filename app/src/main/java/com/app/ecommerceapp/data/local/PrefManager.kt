@@ -8,7 +8,7 @@ import com.app.ecommerceapp.data.local.*
 import com.app.ecommerceapp.ui.login.LoginActivity
 import com.google.gson.Gson
 
-class SharedPrefrencesManager(context: Context) {
+class PrefManager(context: Context) {
 
 
     var cnx: Context

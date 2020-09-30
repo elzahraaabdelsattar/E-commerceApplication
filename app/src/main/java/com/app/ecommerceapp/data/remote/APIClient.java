@@ -1,6 +1,7 @@
 package com.app.ecommerceapp.data.remote;
 
 
+import com.app.ecommerceapp.data.model.ForgetPassword;
 import com.app.ecommerceapp.data.model.ResponseDto;
 import com.app.ecommerceapp.data.model.User;
 
@@ -25,6 +26,13 @@ public interface APIClient {
     Call<ResponseDto<User>> signUp(@Field("phone") String phone, @Field("email") String email,@Field("username") String username,
                                    @Field("longitude") String longitude,@Field("latitude") String latitude,
                                    @Field("password") String password,@Field("re_password") String re_password);
+
+    ///ForgetPassword
+
+    // reset password
+    @POST("password/create")
+    @FormUrlEncoded
+    Call<ResponseDto<ForgetPassword>> resetPassword(@Field("email") String email);
 
 
 

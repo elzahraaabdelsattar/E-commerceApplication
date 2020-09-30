@@ -22,6 +22,18 @@
             android:orientation="vertical"
             app:layout_constraintGuide_end="16dp" />
 
+        <ProgressBar
+            android:id="@+id/sign_up_progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/primary_color_progress_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/logo_imageView"
             android:layout_width="0pt"

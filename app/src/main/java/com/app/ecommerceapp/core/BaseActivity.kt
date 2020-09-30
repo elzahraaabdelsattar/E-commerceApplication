@@ -11,6 +11,7 @@ abstract class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
        // resetTitles()
         hideKeyboard()
+
     }
 
     protected fun resetTitles() {
